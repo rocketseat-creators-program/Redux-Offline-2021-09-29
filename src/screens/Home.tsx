@@ -1,31 +1,27 @@
-import { useDispatch } from "react-redux";
-import App from "../App";
+import ItemList from "../components/ItemList";
 import { NetworkStatus } from "../components/NetworkStatus";
 import { StoreState } from "../components/StoreState";
-import { actions } from "../features/messageSlice/messageSlice";
 
 export default function Home({ network = false, store = false }) {
-  const appDispatch = useDispatch();
-  const { addItem } = actions;
 
   const handleAddItem = () => {
-    appDispatch(addItem({ itemId: Date.now(), amount: 10 }));
+    console.log("Add Item");
   };
 
   return (
     <div className="flex h-screen">
       <div className="flex-1 flex flex-col overflow-hidden">
         <div className="flex h-full">
-          <main className="flex flex-col w-full bg-white overflow-x-hidden overflow-y-auto">
+          <main className="flex flex-col w-full  overflow-x-hidden overflow-y-auto">
             <div className="flex w-full mx-auto px-6 py-4">
               <div className="flex flex-col w-full h-full text-gray-900 text-xl border-4 border-gray-900 border-dashed">
-                <App />
+                <ItemList />
               </div>
             </div>
           </main>
-          <nav className="flex w-1/2 h-full bg-blue-200">
+          <nav className="flex w-1/2 h-full">
             <div className="w-full flex mx-auto px-6 py-4">
-              <div className="w-full h-full flex flex-col items-center justify-center text-gray-900 text-xl">
+              <div className="w-full h-full flex flex-col bg-pink-200  items-center justify-center text-gray-900 text-xl">
                 {network && (
                   <div className="border-4 border-dashed border-gray-900 flex flex-1 items-center justify-center w-full">
                     <NetworkStatus />

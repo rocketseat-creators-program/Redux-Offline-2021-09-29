@@ -3,7 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { Loader } from "./Loader";
 
 export function NetworkStatus() {
-  const { online, busy } = useSelector((state) => state.offline);
+  const { online, busy } = useSelector(
+    (state) => state.offline || { online: true, busy: false }
+  );
   const appDispatch = useDispatch();
   const [status, setstatus] = useState(false);
 

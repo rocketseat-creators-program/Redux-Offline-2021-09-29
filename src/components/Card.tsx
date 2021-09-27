@@ -37,7 +37,7 @@ export function Card({
       transform
       transition
       duration-500
-    max-w-sm
+      max-w-sm
       hover:hover:shadow-2xl
     "
     >
