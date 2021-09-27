@@ -1,0 +1,26 @@
+{
+  "name": "redux-offline",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@redux-offline/redux-offline": "^2.6.0",
+    "@reduxjs/toolkit": "^1.6.1",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-inspector": "^5.1.1",
+    "react-redux": "^7.2.5",
+    "redux": "^4.1.1",
+    "styled-components": "^5.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@vitejs/plugin-react": "^1.0.0",
+    "typescript": "^4.3.2",
+    "vite": "^2.5.4"
+  }
+}
