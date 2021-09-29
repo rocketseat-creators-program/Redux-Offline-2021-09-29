@@ -6,6 +6,9 @@ vamos aprender a utilizar o redux-offline para armazenar os dados offline e faze
 utilizando ele de forma incremental, vamos criar uma aplicação onde o usuário pode interagir com a aplicação
 com ou sem conexão a internet.
 
+## Aplicação Final
+
+<img width='1200px' src="https://user-images.githubusercontent.com/7741167/135356849-77b29bfc-484f-40d4-b61e-70c6bf6b6ec1.gif" />
 
 
 ## Primeiros passos 🏁
